@@ -1,0 +1,84 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#Forms {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  flex-direction: column;
+  box-shadow: black;
+}
+
+div, h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-left: 0.6rem;
+}
+
+#domestic-gross-sales {
+  margin-left: 0.5rem;
+  width: 7rem;
+  height: 1rem;
+  
+}
+
+#audience-score  {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 1rem;
+
+}
+
+#critic-score {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 1rem;
+
+}
+
+#movie-title {
+  margin-left: 0.5rem;
+  width: 6rem;
+  height: 1rem;
+}
+
+
+
+
+/* label {
+  display: flex;
+  margin: 0.2rem;
+  
+} */

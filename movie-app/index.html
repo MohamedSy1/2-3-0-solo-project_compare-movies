@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main id="app">
+     <header>
+      <h1>Movies</h1>
+     </header>
+      <div aria-labelledby="add your movies header">
+        <div id="Forms">
+          <h1>Add your Movie</h1>
+          <form action="" id="add-movie-form">
+            <div>
+              <label for="movie-title">Movie Title:</label>
+              <input type="text" name="movieTitle" id="movie-title" class="input-box">
+            </div>
+            <div>
+              <label for="critic-score">Critic Score:</label>
+              <input type="number" name="criticScore" id="critic-score" class="input-box">
+            </div>
+            <div>
+              <label for="audience-score">Audience Score:</label>
+              <input type="number" name="audienceScore" id="audience-score" class="input-box">
+            </div>
+            <div>
+              <label for="domestic-gross-sales">Domestic Gross Sales:</label>
+              <input type="number" name="domesticGrossSales" id="domestic-gross-sales" class="input-box">
+            </div>
+            <div>
+              <label for="genre">Genre:</label>
+              <select name="genre" id="genre">
+                <option value="" selected disabled>Select a genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="horror">Horror</option>
+                <option value="concert">Concert</option>
+                <option value="documentary">Documentary</option>
+                <option value="musical">Musical</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+              </select>
+            </div>
+            <button type="submit">Add Movie</button>
+          </form>
+        </div>
+      </div>
+      <ul id="movie-list">
+        <li>
+          <section id="results" aria-labelledby="results-heading">
+            <h2 id="results-movie-title" class="movie-detail"></h2>
+            <p class="movie-detail">Critic Score: <span id="results-critic-score"></span></p>
+            <p class="movie-detail">Audience Score: <span id="results-audience-score"></span></p>
+            <p class="movie-detail">Domestic Total: <span id="results-domestic-total"></span></p>
+            <p class="movie-detail">Genre: <span id="results-genre"></span></p>
+          </section>
+        </li>
+      </ul>
+      <input type="reset">
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
