@@ -20,7 +20,6 @@ export const setMovies = (movies) => setLocalStoragekey(movies)
 
 
 export const addMovie = (movie) => {
-    const movies = getMovies().filter((movie) => movie !== movieToRemove)
     setMovies([...movies, movie])
 }
 
