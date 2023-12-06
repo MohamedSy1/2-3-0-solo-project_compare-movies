@@ -52,8 +52,12 @@
       </div>
       <ul id="movie-list"></ul>
       <input type="reset">
-      <div id="myChart"><canvas id="acquisitions"></canvas></div>
+      <div id="container">
+        <h1>Domestic Box Office</h1>
+        <div id="barChart"><canvas id="myChart" width="1000" height="300"></canvas></div>
+      </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

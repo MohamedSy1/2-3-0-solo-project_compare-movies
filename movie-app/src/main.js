@@ -1,25 +1,34 @@
-import { Chart } from 'chart.js';
+import { makeBarChart }  from './component_functions/charts.js';
 import '../style/form.css';
 import '../style/movies.css'
 import handleButton from './component_functions/forms'
-import data from '/movie-data.json'
+import { 
+    getMovies,
+    setMovies,
+    initializeMovies,
+    removeMovie
+
+} from "./component_functions/local-storage.js"
+// import data from '/movie-data.json'
 // import charts from './component_functions/charts.js'
 
-const defaultMovies = () => {
+const renderMovies = () => {
     const ul = document.querySelector('#movie-list')
-
-    data.forEach((item) => {
-        const li = document.createElement('li')
-        li.innerHTML = `
-        <section >
-            <h2 class="movie-detail">${item.title}</h2>
-            <p class="movie-detail" >Critic Score: ${item.criticScore}%</p>
-            <p class="movie-detail">Audience Score: ${item.audienceScore}%</p>
-            <p class="movie-detail">Domestic Total: $${item.domestic}</p>
-            <p class="movie-detail">Genre: ${item.genre}</p>
+    const data = getMovies()
+    console.log(data);
+    data.forEach((movie) => {
+       const li = document.createElement('li')
+       li.innerHTML = `
+       <section >
+            <h2 class="movie-detail">${movie.title}</h2>
+            <p class="movie-detail" >Critic Score: ${movie.criticScore}%</p>
+            <p class="movie-detail">Audience Score: ${movie.audienceScore}%</p>
+            <p class="movie-detail">Domestic Total: $${movie.domestic}</p>
+            <p class="movie-detail">Genre: ${movie.genre}</p>
         </section>
-        `
-        ul.appendChild(li)
+       `
+       ul.append(li)
+       
     })
 
 }
@@ -30,7 +39,9 @@ const defaultMovies = () => {
 const main = () => {
     const form = document.querySelector("#add-movie-form")
     form.addEventListener('submit', handleButton)
-    defaultMovies()
+    if (!getMovies()) initializeMovies();
+    renderMovies()
+    makeBarChart()
     
 }
 

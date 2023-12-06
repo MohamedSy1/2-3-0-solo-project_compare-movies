@@ -1,4 +1,6 @@
-
+import {
+    getMovies,
+  } from './local-storage'
 
 const handleButton = (event) => {
     event.preventDefault()
@@ -22,17 +24,7 @@ const handleButton = (event) => {
 
 
     form.reset();
-    // const movieTitle = document.querySelector("#results-movie-title")
-    // const criticScore = document.querySelector("#results-critic-score")
-    // const audienceScore = document.querySelector("#results-audience-score")
-    // const domesticTotal = document.querySelector('#results-domestic-total')
-    // const genre = document.querySelector("#result4321s-genre")
 
-    // movieTitle.textContent = formObj.movieTitle
-    // criticScore.textContent = formObj.criticScore + '%'
-    // audienceScore.textContent = formObj.audienceScore + '%'
-    // domesticTotal.textContent = '$' + formObj.domesticGrossSales
-    // genre.textContent = formObj.genre
 }
 
 
