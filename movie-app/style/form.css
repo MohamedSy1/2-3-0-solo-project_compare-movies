@@ -74,6 +74,17 @@ div, h1 {
   height: 1rem;
 }
 
+p {
+  display: flex;
+  margin: 0.7rem;
+  justify-content: space-between;
+}
+
+section > h2 {
+  display: flex;
+  margin-left: 0.7rem;
+}
+
 
 
 

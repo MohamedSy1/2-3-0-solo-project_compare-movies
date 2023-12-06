@@ -28,6 +28,7 @@ const main = () => {
     const form = document.querySelector("#add-movie-form")
     form.addEventListener('submit', handleButton)
     defaultMovies()
+    
 }
 
 main()
