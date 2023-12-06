@@ -1,7 +1,9 @@
+import { Chart } from 'chart.js';
 import '../style/form.css';
 import '../style/movies.css'
 import handleButton from './component_functions/forms'
 import data from '/movie-data.json'
+// import charts from './component_functions/charts.js'
 
 const defaultMovies = () => {
     const ul = document.querySelector('#movie-list')
@@ -19,6 +21,7 @@ const defaultMovies = () => {
         `
         ul.appendChild(li)
     })
+
 }
 
 
