@@ -26,6 +26,12 @@ h1 {
   line-height: 1.1;
 }
 
+#movieHead {
+  display: flex;
+  align-items: flex-start;
+
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -33,32 +39,30 @@ h1 {
   text-align: center;
 }
 
-#Forms {
+header {
   display: flex;
-  background-color: rgb(41, 41, 41);
   flex-direction: column;
-  box-shadow: black;
+  align-items: start;
+  padding-bottom: 100px;
 }
 
-div, h1 {
+/* #Forms {
   display: flex;
-  justify-content: flex-start;
-  align-content: space-between;
-  margin-left: 0.6rem;
-}
+  flex-direction: column;
+} */
+
+
 
 #domestic-gross-sales {
   margin-left: 0.5rem;
   width: 7rem;
   height: 1rem;
-  
 }
 
 #audience-score  {
   margin-left: 0.5rem;
   width: 2rem;
   height: 1rem;
-
 }
 
 #critic-score {
@@ -68,23 +72,61 @@ div, h1 {
 
 }
 
-#movie-title {
+/* #movie-title {
   margin-left: 0.5rem;
   width: 6rem;
   height: 1rem;
-}
-
+} */
+/* 
 p {
   display: flex;
   margin: 0.7rem;
   justify-content: space-between;
-}
+}  */
 
-section > h2 {
+/* section > h2 {
   display: flex;
   margin-left: 0.7rem;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 20rem;
+  align-items: flex-start;
+  background-color: rgb(40, 40, 40);
 }
 
+
+
+canvas {
+  width: 55rem;
+  height: 55rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.container > h1 {
+  align-self: flex-start;
+}
+
+#donutContainer {
+  width: 800px;
+
+  
+}
+
+/* #FormDefaultMovie {
+  display: flex;
+  justify-content: space-between;
+
+} */
 
 
 
@@ -93,3 +135,17 @@ section > h2 {
   margin: 0.2rem;
   
 } */
+
+#movieandform {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#removeMovie {
+  justify-content: center;
+  width: 15rem;
+  height: 8rem;
+}

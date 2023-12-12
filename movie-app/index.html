@@ -9,52 +9,62 @@
   <body>
     <main id="app">
      <header>
-      <h1>Movies</h1>
+      <h1 id="heading">2023's Top Domestic Movies</h1>
      </header>
-      <div aria-labelledby="add your movies header">
+     <h2 id="movieHead">Movie</h2>
+      <div id="movieandform" aria-labelledby="add your movies header">
         <div id="Forms">
-          <h1>Add your Movie</h1>
-          <form action="" id="add-movie-form">
-            <div>
-              <label for="movie-title">Movie Title:</label>
-              <input type="text" name="movieTitle" id="movie-title" class="input-box">
-            </div>
-            <div>
-              <label for="critic-score">Critic Score:</label>
-              <input type="number" name="criticScore" id="critic-score" class="input-box">
-            </div>
-            <div>
-              <label for="audience-score">Audience Score:</label>
-              <input type="number" name="audienceScore" id="audience-score" class="input-box">
-            </div>
-            <div>
-              <label for="domestic-gross-sales">Domestic Gross Sales:</label>
-              <input type="number" name="domesticGrossSales" id="domestic-gross-sales" class="input-box">
-            </div>
-            <div>
-              <label for="genre">Genre:</label>
-              <select name="genre" id="genre">
-                <option value="" selected disabled>Select a genre</option>
-                <option value="action">Action</option>
-                <option value="comedy">Comedy</option>
-                <option value="horror">Horror</option>
-                <option value="concert">Concert</option>
-                <option value="documentary">Documentary</option>
-                <option value="musical">Musical</option>
-                <option value="romance">Romance</option>
-                <option value="sci-fi">Sci-Fi</option>
-                <option value="thriller">Thriller</option>
-              </select>
-            </div>
-            <button type="submit">Add Movie</button>
-          </form>
+            <form action="" id="add-movie-form">
+              <h1>Add your Movie</h1>
+              <div>
+                <label for="movie-title">Movie Title:</label>
+                <input type="text" name="title" id="movie-title" class="input-box" required>
+              </div>
+              <div>
+                <label for="critic-score">Critic Score:</label>
+                <input type="number" name="criticScore" id="critic-score" class="input-box" required>
+              </div>
+              <div>
+                <label for="audience-score">Audience Score:</label>
+                <input type="number" name="audienceScore" id="audience-score" class="input-box" required>
+              </div>
+              <div>
+                <label for="domestic-gross-sales">Domestic Gross Sales:</label>
+                <input type="number" name="domestic" id="domestic-gross-sales" class="input-box" required>
+              </div>
+              <div>
+                <label for="genre">Genre:</label>
+                <select name="genre" id="genre" required>
+                  <option value="" selected disabled>Select a genre</option>
+                  <option value="action">Action</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="horror">Horror</option>
+                  <option value="concert">Concert</option>
+                  <option value="documentary">Documentary</option>
+                  <option value="musical">Musical</option>
+                  <option value="romance">Romance</option>
+                  <option value="sci-fi">Sci-Fi</option>
+                  <option value="thriller">Thriller</option>
+                </select>
+              </div>
+              <button type="submit">Add Movie</button>
+            </form>
+          </div>
+        <ul id="movie-list"></ul>
+        
+      </div>
+      <button id="removeMovie">Go Back To Default</button>
+      <div class="container">
+        <h1>Domestic Box Office</h1>
+        <div id="barChart">
+            <!-- canvas goes here -->
         </div>
       </div>
-      <ul id="movie-list"></ul>
-      <input type="reset">
-      <div id="container">
-        <h1>Domestic Box Office</h1>
-        <div id="barChart"><canvas id="myChart" width="1000" height="300"></canvas></div>
+      <div class="container" id="donutContainer">
+        <h1>Genres and total Gross</h1>
+        <div id="donutChart">
+
+        </div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

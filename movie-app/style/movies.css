@@ -1,19 +1,32 @@
 ul {
     display: flex;
-    background-color: rgb(41, 41, 41);
-    height: 50vh;
-    justify-content: center;
     flex-wrap: wrap;
-    list-style: none;
     overflow-y: scroll;
+    height: 30rem;
+    min-width: 300px;
+    border: 1px solid;
+    gap: 0.5rem;
+    padding: 5;
+    background-color: rgb(40, 40, 40);
+    /* justify-content: center; */
+
+    
+
 }
 
 li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0.6rem;
-    border: solid;
     
+    display: flex;
+    align-items: center;
+    text-align: start;
+    white-space: nowrap;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    flex: 1 0 250px;
+
+}
+
+.movie-detail {
+    margin: 0;
 }

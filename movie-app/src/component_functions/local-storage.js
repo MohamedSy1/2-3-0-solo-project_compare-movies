@@ -23,13 +23,13 @@ export const setLocalStorageKey = (key, value) => {
   
   export const addMovies = (movie) => {
     const movies = getMovies();
-    setMovies([...movies, movie]);
+    setMovies([movie,...movies]);
   }
   
   export const removeMovie = (movieToRemove) => {
-    const movies = getNames();
+    const movies = getMovies();
     const filteredMovies = movies.filter((movie) => movie !== movieToRemove);
-    setMovies(filteredNames);
+    setMovies(filteredMovies);
   }
   
   // nums-specific helper functions
