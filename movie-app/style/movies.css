@@ -4,6 +4,7 @@ ul {
     overflow-y: scroll;
     height: 30rem;
     min-width: 300px;
+    max-width: 55rem;
     border: 1px solid;
     gap: 0.5rem;
     padding: 5;

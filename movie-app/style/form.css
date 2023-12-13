@@ -1,4 +1,4 @@
-:root {
+ :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -6,20 +6,19 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  margin:0;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  
+width: fit-content;
+}  */
 
 h1 {
   font-size: 1.2em;
@@ -33,17 +32,16 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
+  justify-content: center;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-bottom: 100px;
+  padding-bottom: 1rem;
 }
 
 /* #Forms {
@@ -108,6 +106,7 @@ canvas {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -116,10 +115,16 @@ canvas {
   align-self: flex-start;
 }
 
-#donutContainer {
-  width: 800px;
+#charts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 
-  
+}
+
+
+#donutChart, #barChart {
+  width: 40rem;
 }
 
 /* #FormDefaultMovie {
@@ -142,10 +147,33 @@ canvas {
   justify-content: center;
   align-items: center;
   background-color: black;
+  margin:0.7rem;
 }
 
 #removeMovie {
   justify-content: center;
   width: 15rem;
   height: 8rem;
+}
+
+#homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
+  background-color: black;
+  margin: 0px;
+}
+
+#donutContainer > h1{
+  display: flex;
+  justify-content: center;
+} 
+
+#donuts {
+  margin: 0px;
+  background-color: black;
+}
+body {
+  margin: 0
 }
