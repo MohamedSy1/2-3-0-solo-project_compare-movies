@@ -11,8 +11,17 @@
     <main id="app">
       <section id="homePage">
         <header>
-          
-          <h1 id="heading" ><i class='bx bx-camera-movie'></i>2023's Top Domestic Movies</h1>
+          <nav>
+            <div>
+              <h1 id="heading" ><i class='bx bx-camera-movie'></i>2023's Top Domestic Movies</h1>
+            </div>
+            <div class="nav-bar-links">
+              <ol>
+                <li><a href="#charts">BarChart</a></li>
+                <li><a href="#">DonutChart</a></li>
+              </ol>
+            </div>
+          </nav>
          </header>
          <h2 id="movieHead">Movie</h2>
           <div id="movieandform" aria-labelledby="add your movies header">
@@ -50,16 +59,15 @@
                       <option value="thriller">Thriller</option>
                     </select>
                   </div>
-                  <button type="submit">Add Movie</button>
+                    <button type="submit">Add Movie</button>
                 </form>
               </div>
-            <ul id="movie-list"></ul>
-    
+              <div>
+                <ul id="movie-list"></ul>
+                <button id="removeMovie">Go Back To Default</button>
+              </div>
       </section>
-      <button id="removeMovie">Go Back To Default</button>
-        
       </div>
-      
     <div id="charts">
       <div class="container">
         <h1>Domestic Box Office</h1>
@@ -74,7 +82,6 @@
           </div>
         </div>
       </section>
-
     </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

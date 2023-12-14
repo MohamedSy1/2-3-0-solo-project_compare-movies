@@ -6,10 +6,10 @@ export const makeDonutChart = () => {
  
     const ctx = document.createElement('canvas');
     donutChart.appendChild(ctx);
+    ctx.id = "dons"
  
     let genre = movieData.map((movie) => movie.genre);
     console.log(genre)
-    let set = new Set(genre)
     let obj = {}
 
     for (let i = 0; i < genre.length; i++) {
@@ -29,7 +29,7 @@ export const makeDonutChart = () => {
     new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ["action", "adventure", "comedy", "drama", "horror", "concert"],
+            labels: ["action", "adventure", "comedy", "drama", "horror", "concert", ],
             datasets: [{
                 label: 'My First Dataset',
                 data: [obj.action, obj.adventure, obj.comedy, obj.drama, obj.horror, obj.concert],

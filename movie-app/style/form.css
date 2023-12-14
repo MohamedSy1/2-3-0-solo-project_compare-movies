@@ -28,6 +28,7 @@ h1 {
 #movieHead {
   display: flex;
   align-items: flex-start;
+  margin: 0.1rem;
 
 }
 
@@ -70,11 +71,11 @@ header {
 
 }
 
-/* #movie-title {
+#movie-title {
   margin-left: 0.5rem;
   width: 6rem;
   height: 1rem;
-} */
+}
 /* 
 p {
   display: flex;
@@ -90,12 +91,26 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
-  width: 20rem;
+  border-radius: 5px;
+  max-width: 55rem;
+  min-width: 315px;
+  /* justify-content: center; */
   align-items: flex-start;
   background-color: rgb(40, 40, 40);
+  height: 250px;
 }
+#add-movie-form > div{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.2rem;
+  
 
+}
+#add-movie-form > h1 {
+  margin: 0.7rem;
+}
 
 
 canvas {
@@ -123,9 +138,13 @@ canvas {
 }
 
 
-#donutChart, #barChart {
+/* #donutChart, #barChart {
   width: 40rem;
+
 }
+#barChart {
+  height: 40rem;
+} */
 
 /* #FormDefaultMovie {
   display: flex;
@@ -133,13 +152,15 @@ canvas {
 
 } */
 
-
-
 /* label {
   display: flex;
   margin: 0.2rem;
   
 } */
+
+#bars {
+  width: 1200px;
+}
 
 #movieandform {
   display: flex;
@@ -147,13 +168,16 @@ canvas {
   justify-content: center;
   align-items: center;
   background-color: black;
-  margin:0.7rem;
+  margin:0.1rem;
 }
 
 #removeMovie {
-  justify-content: center;
-  width: 15rem;
-  height: 8rem;
+  margin: 1rem auto 1rem auto;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.2rem 2rem;
+  width: 40rem;
 }
 
 #homePage {
@@ -174,6 +198,46 @@ canvas {
   margin: 0px;
   background-color: black;
 }
+#dons {
+  width: 600px;
+
+}
+
 body {
   margin: 0
 }
+
+form > button {
+  margin: 1rem auto 1rem auto;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.2rem 2rem;
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+ 
+  to {
+    opacity: 1;
+  }
+ }
+ 
+ #movie-list > li {
+  animation-name: fadein;
+  animation-duration: 2s;
+ }
+
+
+ html {
+  scroll-behavior: smooth;
+ }
+
+
+ #movie-list {
+  scroll-behavior: smooth;
+ }
+ 

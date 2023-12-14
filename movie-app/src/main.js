@@ -14,7 +14,10 @@ import {
 // import data from '/movie-data.json'
 // import charts from './component_functions/charts.js'
 
-
+//handles the form:
+// - Extract data from form
+// - Adds data to localStorage
+// - Render the data from localStorage
 const  handleButton = (event) => {
     event.preventDefault()
     const ul = document.querySelector('#movie-list') 
@@ -52,7 +55,6 @@ const renderMovies = () => {
         </section>
        `
        ul.append(li)
-       
     })
     makeBarChart()
     makeDonutChart()
@@ -70,19 +72,16 @@ const removeMovies = (event) => {
 
 
 const main = () => {
-   
     const form = document.querySelector("#add-movie-form")
     form.addEventListener('submit', handleButton)
     if (!getMovies()) initializeMovies();
     renderMovies()
     makeBarChart()
     makeDonutChart()
-    
     const button = document.querySelector('#removeMovie')
     button.addEventListener('click', removeMovies)
     // const button = document.querySelector('defaultButton')
     // button.addEventListener('click', removeMovies)
-    
 }
 
 main()

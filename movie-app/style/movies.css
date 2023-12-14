@@ -1,28 +1,36 @@
-ul {
+#movie-list {
     display: flex;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    padding: 2rem;
     height: 30rem;
     min-width: 300px;
     max-width: 55rem;
     border: 1px solid;
     gap: 0.5rem;
-    padding: 5;
     background-color: rgb(40, 40, 40);
     /* justify-content: center; */
 
     
 
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+ }
 
-li {
-    
+#movie-list {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#movie-list > li {
     display: flex;
     align-items: center;
     text-align: start;
     white-space: nowrap;
     padding: 10px;
     border: 1px solid #000;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     flex: 1 0 250px;
 
@@ -30,4 +38,22 @@ li {
 
 .movie-detail {
     margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+ol {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ol > li {
+    padding-right: 5rem;
 }
