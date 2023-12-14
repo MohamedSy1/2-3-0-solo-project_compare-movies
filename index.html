@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/2-3-0-solo-project_compare-movies/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" crossorigin src="/2-3-0-solo-project_compare-movies/assets/index-fUqV4LtP.js"></script>
+    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_compare-movies/assets/index-NAFWcza2.css">
+  </head>
+  <body>
+    <main id="app">
+      <section id="homePage">
+        <header>
+          <nav>
+            <div>
+              <h1 id="heading" ><i class='bx bx-camera-movie'></i>2023's Top Domestic Movies</h1>
+            </div>
+            <div class="nav-bar-links">
+              <ol>
+                <li><a href="#charts">BarChart</a></li>
+                <li><a href="#">DonutChart</a></li>
+              </ol>
+            </div>
+          </nav>
+         </header>
+         <h2 id="movieHead">Movie</h2>
+          <div id="movieandform" aria-labelledby="add your movies header">
+            <div id="Forms">
+                <form action="" id="add-movie-form">
+                  <h1>Add your Movie</h1>
+                  <div>
+                    <label for="movie-title">Movie Title:</label>
+                    <input type="text" name="title" id="movie-title" class="input-box" required>
+                  </div>
+                  <div>
+                    <label for="critic-score">Critic Score:</label>
+                    <input type="number" name="criticScore" id="critic-score" class="input-box" required>
+                  </div>
+                  <div>
+                    <label for="audience-score">Audience Score:</label>
+                    <input type="number" name="audienceScore" id="audience-score" class="input-box" required>
+                  </div>
+                  <div>
+                    <label for="domestic-gross-sales">Domestic Gross Sales:</label>
+                    <input type="number" name="domestic" id="domestic-gross-sales" class="input-box" required>
+                  </div>
+                  <div>
+                    <label for="genre">Genre:</label>
+                    <select name="genre" id="genre" required>
+                      <option value="" selected disabled>Select a genre</option>
+                      <option value="action">Action</option>
+                      <option value="comedy">Comedy</option>
+                      <option value="horror">Horror</option>
+                      <option value="concert">Concert</option>
+                      <option value="documentary">Documentary</option>
+                      <option value="musical">Musical</option>
+                      <option value="romance">Romance</option>
+                      <option value="sci-fi">Sci-Fi</option>
+                      <option value="thriller">Thriller</option>
+                    </select>
+                  </div>
+                    <button type="submit">Add Movie</button>
+                </form>
+              </div>
+              <div>
+                <ul id="movie-list"></ul>
+                <button id="removeMovie">Go Back To Default</button>
+              </div>
+      </section>
+      </div>
+    <div id="charts">
+      <div class="container">
+        <h1>Domestic Box Office</h1>
+        <div id="barChart">
+            <!-- canvas goes here -->
+        </div>
+      </div>
+      <section id="donuts">
+        <div class="container" id="donutContainer">
+          <h1>Genres and total Gross</h1>
+          <div id="donutChart">
+          </div>
+        </div>
+      </section>
+    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
