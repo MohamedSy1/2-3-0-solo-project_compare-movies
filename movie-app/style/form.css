@@ -13,13 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* body {
-  margin: 0;
-  display: flex;
-  
-width: fit-content;
-}  */
-
 h1 {
   font-size: 1.2em;
   line-height: 1.1;
@@ -45,13 +38,6 @@ header {
   padding-bottom: 1rem;
 }
 
-/* #Forms {
-  display: flex;
-  flex-direction: column;
-} */
-
-
-
 #domestic-gross-sales {
   margin-left: 0.5rem;
   width: 7rem;
@@ -76,17 +62,6 @@ header {
   width: 6rem;
   height: 1rem;
 }
-/* 
-p {
-  display: flex;
-  margin: 0.7rem;
-  justify-content: space-between;
-}  */
-
-/* section > h2 {
-  display: flex;
-  margin-left: 0.7rem;
-} */
 
 form {
   display: flex;
@@ -99,19 +74,18 @@ form {
   background-color: rgb(40, 40, 40);
   height: 250px;
 }
+
 #add-movie-form > div{
   display: flex;
   justify-content: space-around;
   margin-left: 0.7rem;
   margin-right: 0.7rem;
   margin-bottom: 0.2rem;
-  
-
 }
+
 #add-movie-form > h1 {
   margin: 0.7rem;
 }
-
 
 canvas {
   width: 55rem;
@@ -124,8 +98,6 @@ canvas {
   align-items: center;
 }
 
-
-
 .container > h1 {
   align-self: flex-start;
 }
@@ -136,27 +108,6 @@ canvas {
   align-content: center;
 
 }
-
-
-/* #donutChart, #barChart {
-  width: 40rem;
-
-}
-#barChart {
-  height: 40rem;
-} */
-
-/* #FormDefaultMovie {
-  display: flex;
-  justify-content: space-between;
-
-} */
-
-/* label {
-  display: flex;
-  margin: 0.2rem;
-  
-} */
 
 #bars {
   width: 1200px;
@@ -198,9 +149,9 @@ canvas {
   margin: 0px;
   background-color: black;
 }
+
 #dons {
   width: 600px;
-
 }
 
 body {
@@ -215,7 +166,6 @@ form > button {
   padding: 0.2rem 2rem;
 }
 
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -226,18 +176,16 @@ form > button {
   }
  }
  
- #movie-list > li {
+#movie-list > li {
   animation-name: fadein;
   animation-duration: 2s;
- }
+}
 
-
- html {
+html {
   scroll-behavior: smooth;
- }
+}
 
-
- #movie-list {
+#movie-list {
   scroll-behavior: smooth;
- }
+}
  

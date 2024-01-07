@@ -41,8 +41,6 @@ const renderMovies = () => {
     const ul = document.querySelector('#movie-list')
     ul.innerHTML = '';
     const data = getMovies()
-    console.log(data)
-    console.log(data);
     data.forEach((movie) => {
        const li = document.createElement('li')
        li.innerHTML = `

@@ -8,14 +8,11 @@
     border: 1px solid;
     gap: 0.5rem;
     background-color: rgb(40, 40, 40);
-    /* justify-content: center; */
-
-    
-
 }
+
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
  }
 
 #movie-list {
@@ -46,7 +43,6 @@ nav {
     align-items: center;
 
 }
-
 
 ol {
     display: flex;
