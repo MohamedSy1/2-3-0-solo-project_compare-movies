@@ -33,8 +33,3 @@ export const makeBarChart = () => {
     }
   })
 }
-
-
-
-
-console.log('chartjs')

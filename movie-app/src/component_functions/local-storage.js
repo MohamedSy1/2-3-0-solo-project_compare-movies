@@ -31,12 +31,3 @@ export const setLocalStorageKey = (key, value) => {
     const filteredMovies = movies.filter((movie) => movie !== movieToRemove);
     setMovies(filteredMovies);
   }
-  
-  // nums-specific helper functions
-//   export const setNums = (nums) => setLocalStorageKey('nums', nums);
-//   export const getNums = () => getLocalStorageKey('nums');
-  
-//   export const addNums = (num) => {
-//     const nums = getNums();
-//     setNums([...nums, num]);
-//   }

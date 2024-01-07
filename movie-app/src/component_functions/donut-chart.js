@@ -19,13 +19,7 @@ export const makeDonutChart = () => {
             obj[genre[i]] = 1
         }
     }
-
-
-    console.log(obj)
     
-  
- 
-
     new Chart(ctx, {
         type: 'doughnut',
         data: {
