@@ -5,5 +5,5 @@ export default defineConfig({
   // so just run npm build before pushing to GitHub and this will rebuild our assets to the root
   build: { outDir: '..' },
   // needed for github pages just put the repo name here
-  base: '/2-3-0-solo-project_compare-movies/', 
+  // base: '/2-3-0-solo-project_compare-movies/', 
 });
