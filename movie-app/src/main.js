@@ -66,6 +66,7 @@ const main = () => {
     button.addEventListener('click', removeMovies)
 }
 
+console.log('hello')
 main()
 
 export default renderMovies;
